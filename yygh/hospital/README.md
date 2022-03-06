@@ -14,6 +14,8 @@ git clone https://github.com/PanJiaChen/vue-admin-template.git
 
 # Install dependencies
 npm install
+npm install axios
+npm install js-cookie
 
 # Serve with hot reload at localhost:9528
 npm run dev

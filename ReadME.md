@@ -23,4 +23,16 @@
 =============
 根据医生的排班时间和医院的预约周期，列出医院这个周期可预约的医生列表和剩余预约数量。选择可预约的医生即可生成挂号订单。
 ![图片alt](images/Snipaste_2022-03-06_15-46-43.png "图片title")
-![图片alt](images/Snipaste_2022-03-06_16-20-34.png "图片title")
+![图片alt](images/Snipaste_2022-03-06_16-30-05.png "图片title")
+
+挂号订单
+========
+![图片alt](images/Snipaste_2022-03-06_16-25-02.png "图片title")
+![图片alt](images/Snipaste_2022-03-06_16-25-02.png "图片title")
+
+用户信息
+===========
+能进行认证，就诊人管理，订单查询。
+![图片alt](images/Snipaste_2022-03-06_16-30-28.png "图片title")
+![图片alt](images/Snipaste_2022-03-06_16-30-41.png "图片title")
+![图片alt](images/Snipaste_2022-03-06_16-30-50.png "图片title")

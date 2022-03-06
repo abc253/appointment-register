@@ -1,4 +1,4 @@
-package jw.hospital.sta;
+package lw.hospital.sta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//取消数据源自动配置
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = {"jw.hospital"})
-@ComponentScan(basePackages = {"jw.hospital"})
+@EnableFeignClients(basePackages = {"lw.hospital"})
+@ComponentScan(basePackages = {"lw.hospital"})
 public class ServiceStatisticsApplication {
 
     public static void main(String[] args) {

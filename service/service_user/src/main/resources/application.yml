@@ -1,0 +1,53 @@
+server:
+  port: 8160
+spring:
+  application:
+    name: service-user
+  profiles:
+    active: dev
+
+  #数据库连接
+  datasource:
+    username: root
+    password: 3333
+    url: jdbc:mysql://localhost:3306/yygh_user?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  #redis的配置
+  redis:
+    host: ${address}
+    port: 6379
+    database: 0
+    password: pass
+    timeout: 1800000
+    jedis:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+
+  #springvloud
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+mybatis-plus:
+  mapper-locations: classpath:lw/hospital/user/mapper/**/*.xml
+
+#wx.open.app_id=wxed9954c01bb89b47
+#wx.open.app_secret=a7482517235173ddb4083788de60b90e
+#wx.open.redirect_url=http://guli.shop/api/ucenter/wx/callback
+#yygh.baseUrl=http://localhost:3000
+
+#wx:
+#  open:
+#    app_id: wxed9954c01bb89b47
+#    app_sercret: a7482517235173ddb4083788de60b90e
+#    redirect_url: http://guli.shop/api/ucenter/wx/callback
+#yygh:
+#  baseUrl: http://localhost:3000

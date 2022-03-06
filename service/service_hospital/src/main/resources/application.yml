@@ -1,0 +1,59 @@
+#服务端口
+server:
+  port: 8201
+#服务名称
+spring:
+  application:
+    name: service-hospital
+  data:
+    mongodb:
+      host: ${address}
+      port: 27017
+      database: yygh_hosp
+      username: admin
+      password: 'password'
+      authentication-database: admin
+
+  #环境设置 test,dev,prod
+  profiles:
+    active: dev
+
+  #数据库连接
+  datasource:
+    username: root
+    password: 3333
+    url: jdbc:mysql://localhost:3306/yygh_hosp?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  #redis的配置
+  redis:
+    host: ${address}
+    port: 6379
+    database: 0
+    password: pass
+    timeout: 1800000
+    jedis:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+
+  #springvloud
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+  #rabbit
+  rabbitmq:
+    host: ${address}
+    port: 5672
+    username: admin
+    password: liwei
+mybatis-plus:
+  mapper-locations: classpath:lw/hospital/hosp/mapper/**/*.xml
